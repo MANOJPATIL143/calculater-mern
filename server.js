@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const connectDB = require('./databaseConfig/db');
-import path from 'path';
+const path = require('path')
 
 const dotenv = require("dotenv");
 dotenv.config();
