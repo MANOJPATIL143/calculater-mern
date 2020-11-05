@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const config = require('databaseConfig');
+const config = require('databaseconfig');
 const url = config.get('mongoURL');
 
 //const db = config.get('mongoURI');
