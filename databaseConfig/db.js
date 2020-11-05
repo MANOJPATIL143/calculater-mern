@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const db = require('../databaseConfig/default.json');
-const url = db.mongoURL;
+const config = require('databaseConfig');
+const url = config.get('mongoURL');
 
 //const db = config.get('mongoURI');
 const connectDB = async () => {
