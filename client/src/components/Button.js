@@ -24,6 +24,7 @@ const Button = () => {
     try {
 
       const inte_Answer = String((eval(input)));
+      setInput(inte_Answer);
       final_Answer = input + '=' + inte_Answer;
     } catch(err) {
       console.log(err);
