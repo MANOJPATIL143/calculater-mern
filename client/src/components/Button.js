@@ -33,7 +33,7 @@ const Button = () => {
         calculation: final_Answer
     }
 
-    axios.post('http://localhost:8000/api', request_Calculation)
+    axios.post('/api', request_Calculation)
     .then(response => {
       if (response.status === 200) {
         //alert('successfully');

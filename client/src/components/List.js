@@ -5,7 +5,7 @@ const List = () => {
     const [calculations, setCalculations] = useState("");
 
     //useEffect(() => {
-    axios.get('http://localhost:8000/api')
+    axios.get('/api')
         .then(response => {
             console.log(response);
                 setCalculations(response.data);
