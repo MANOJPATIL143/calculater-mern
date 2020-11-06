@@ -7,7 +7,6 @@ const List = () => {
     //useEffect(() => {
     axios.get('/api')
         .then(response => {
-            console.log(response);
                 setCalculations(response.data);
             })
             .catch(error => {
