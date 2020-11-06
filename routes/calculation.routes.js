@@ -9,7 +9,6 @@ const checkReqBody = (req, res, next) => {
     console.log(`Enter checkReqBody ${req}`);
     if (!req.body.calculation) {
         return res.status(400).send({ message: "calculation cannot be empty" });
-
     }
     next();
 }

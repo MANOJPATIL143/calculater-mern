@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const config = require('databaseconfig');
-const url = config.get('mongoURL');
+//const config = import('./default.json')
+//const url = config.get('mongoURL');
+const url = "mongodb+srv://kirancg:6eesnC4PTtq8Z53y@calculatordb.cxtxn.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
-//const db = config.get('mongoURI');
 const connectDB = async () => {
     try {
         await mongoose.connect(url, {

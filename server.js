@@ -2,8 +2,9 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const connectDB = require('./databaseconfig/db');
-const path = require('path')
+const path = require('path');
+const connectDB = require('./config/db');
+
 
 const dotenv = require("dotenv");
 dotenv.config();
@@ -32,7 +33,7 @@ app.use((req, res, next) => {
 connectDB();
 
 //Define routes
-const adminRoutes = require('./routes/calculation.routes')
+const adminRoutes = require('./routes/calculation.routes');
 app.use('/api', adminRoutes);
 
 // Serve static assets if in production
