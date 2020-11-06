@@ -41,6 +41,6 @@ Everyone working on this Repository please follow the below rules:
 
 | API's                | Functionality                                                                                                               | Example                                       | Method | Requires token authentication |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------ | ----------------------------- |
-| /user/               | Gets all the users in the database (Can be used for analytical purposes)                                                    | http://localhost:8000/api               | GET    | No                            |
-| /user/registration   | Adds the user information to the database                                                                                   | http://localhost:8000/api                | POST   | No                            |
+| /api               | Gets recent 10 calculations in the database                                                     | http://localhost:8000/api               | GET    | No                            |
+| /api  | Adds the calculation information to the database                                                             | http://localhost:8000/api                | POST  | No                            |
 
