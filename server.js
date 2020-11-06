@@ -3,14 +3,14 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
-const connectDB = require('./config/db');
-
-
-const dotenv = require("dotenv");
-dotenv.config();
 
 //initialize express application
 const app = express();
+//importing the database connection
+const connectDB = require('./config/db');
+
+const dotenv = require("dotenv");
+dotenv.config();
 
 //body parser
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
     }
     next();
   });
-//connecting to the database pf MongoDB Atlas
+//connecting to the database of MongoDB Atlas
 connectDB();
 
 //Define routes

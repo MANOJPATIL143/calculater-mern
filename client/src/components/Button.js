@@ -22,10 +22,9 @@ const Button = () => {
     let final_Answer;
     e.preventDefault();
     try {
-
-      const inte_Answer = String((eval(input)));
-      setInput(inte_Answer);
-      final_Answer = input + '=' + inte_Answer;
+        const inte_Answer = String((eval(input)));
+        final_Answer = input + '=' + inte_Answer;
+        setInput(inte_Answer);
     } catch(err) {
       console.log(err);
     }
@@ -45,7 +44,6 @@ const Button = () => {
     }).catch(error => {
       console.log(error);
     })
-
   }
 
   return (
