@@ -10,7 +10,7 @@ Everyone working on this Repository please follow the below rules:
 
 1.  Clone your forked repository on your local machine using the following command:
     ```bash
-    https://github.com/kirancg/FullStack_Calculator.git
+     https://github.com/MANOJPATIL143/Techplement.git
     ```
 2.  Once cloned cd into the folder and open the files in your favourite editor.
 3.  Open a terminal in your folder and run the following command to install all the packages.
